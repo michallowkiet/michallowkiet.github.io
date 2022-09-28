@@ -1,0 +1,65 @@
+/* 
+  tło: #213b50
+  pole nieaktywne: #2b4a64
+  pole aktywne: #4e708c
+  ramka aktywnego pola i kolor tekstu: #ffffff
+  kolor przycisku wysyłania: #1ac056
+  kolor przycisku wysyłania po najechaniu kursorem: #46e881
+*/
+
+form {
+  background-color: #213b50;
+  color: #fff;
+  padding: 20px;
+}
+
+input,
+select,
+textarea {
+  background-color: #2b4a64;
+  color: #fff;
+  width: 50%;
+  margin-bottom: 10px;
+  border: 1px solid #2b4a64;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  display: block;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: #4e708c;
+  border: 1px solid #fff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+label[for*="male"],
+label[for*="agreement"] {
+  display: inline;
+}
+
+input[type="submit"] {
+  display: block;
+  width: auto;
+  background-color: #1ac056;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+  background-color: #46e881;
+}
