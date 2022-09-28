@@ -1,0 +1,52 @@
+div::after {
+  font-size: 40px;
+  content: "10";
+  /* counter-reset: licznik 0; */
+  animation: counter 10s linear infinite;
+}
+
+@keyframes counter {
+  0% {
+    content: "10";
+  }
+
+  10% {
+    content: "9";
+  }
+
+  20% {
+    content: "8";
+  }
+
+  30% {
+    content: "7";
+  }
+
+  40% {
+    content: "6";
+  }
+
+  50% {
+    content: "5";
+  }
+
+  60% {
+    content: "4";
+  }
+
+  70% {
+    content: "3";
+  }
+
+  80% {
+    content: "2";
+  }
+
+  90% {
+    content: "1";
+  }
+
+  100% {
+    content: "I love CSS :)";
+  }
+}
