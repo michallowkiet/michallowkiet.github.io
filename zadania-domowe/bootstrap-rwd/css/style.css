@@ -1,0 +1,17 @@
+.icon-html-css,
+.icon-js,
+.icon {
+  text-align: center;
+  font-size: 3rem;
+  color: orange;
+  padding: 1.5rem 1.88rem;
+  border-radius: 100%;
+}
+
+.icon-js {
+  padding: 1.5rem 1.7rem;
+}
+
+.icon {
+  padding: 1.5rem 1.5rem;
+}
