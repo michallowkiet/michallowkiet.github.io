@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+#pracownicy {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+div {
+  align-self: center;
+}
+
+#pracownicy > * {
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+#oblicz {
+  margin-top: 2rem;
+  align-self: center;
+}
+
+#title,
+[id^="pracownik"] {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+#title {
+  background-color: #ccc;
+}
+
+#title span:not(#tytul-pracownik),
+[id^="pracownik"] > *:not(.pracownik) {
+  text-align: center;
+}
+
+#title > *,
+[id^="pracownik"] > * {
+  flex-basis: 25%;
+}
+
+[id^="pracownik"]:nth-child(even) {
+  background-color: #eee;
+}
+
+[id^="pracownik"] .czas,
+[id^="pracownik"] .stawka {
+  min-width: 0;
+}
+
+.wyplata {
+  font-weight: 700;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-top: 0.5rem;
+}
+
+ul li:first-child {
+  border-bottom: 2px solid gold;
+  font-weight: 700;
+}
