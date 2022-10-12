@@ -15,27 +15,27 @@ $(function () {
           sellP.innerHTML = `${data.price_24h} ${line}`;
         }
 
-        if (data.last_trade_price === Number(buyP.textContent)) {
+        if (data.last_trade_price === +buyP.textContent) {
           buyP.innerHTML = `${data.last_trade_price} ${line}`;
         }
 
-        if (data.last_trade_price > Number(buyP.textContent)) {
+        if (data.last_trade_price > +buyP.textContent) {
           buyP.innerHTML = `${data.last_trade_price} ${arrowUp}`;
         }
 
-        if (data.last_trade_price < Number(buyP.textContent)) {
+        if (data.last_trade_price < +buyP.textContent) {
           buyP.innerHTML = `${data.last_trade_price} ${arrowDown}`;
         }
 
-        if (data.price_24h === Number(sellP.textContent)) {
+        if (data.price_24h === +sellP.textContent) {
           sellP.innerHTML = `${data.price_24h} ${line}`;
         }
 
-        if (data.price_24h > Number(sellP.textContent)) {
+        if (data.price_24h > +sellP.textContent) {
           sellP.innerHTML = `${data.price_24h} ${arrowUp}`;
         }
 
-        if (data.price_24h < Number(sellP.textContent)) {
+        if (data.price_24h < +sellP.textContent) {
           sellP.innerHTML = `${data.price_24h} ${arrowDown}`;
         }
       }
