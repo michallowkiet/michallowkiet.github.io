@@ -1,0 +1,61 @@
+section,
+footer {
+  padding: 60px 0;
+}
+
+.showcase {
+  padding-top: 0;
+}
+
+.showcase-img-1 {
+  background: url("../img/view-1.jpg");
+}
+
+.showcase-img-2 {
+  background: url("../img/view-2.jpg");
+}
+
+.showcase-img-3 {
+  background: url("../img/view-3.jpg");
+}
+
+.showcase-img {
+  background-position: center;
+  background-size: cover;
+}
+
+.showcase-text {
+  padding: 50px;
+}
+
+.team-img {
+  max-width: 200px;
+}
+
+.cta {
+  background: url("../img/slider-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    margin-bottom: 50px;
+  }
+
+  .service-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .showcase-img {
+    height: 300px;
+  }
+
+  .team-item {
+    padding-bottom: 50px;
+  }
+
+  .team-item-last {
+    padding-bottom: 0;
+  }
+}
