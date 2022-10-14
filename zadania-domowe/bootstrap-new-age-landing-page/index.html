@@ -10,13 +10,17 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="navbar navbar-expand-md bg-transparent">
-        <div class="container px-5">
-          <a class="navbar-brand text-warning fs-6" href="#">New Age</a>
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container">
+          <a class="navbar-brand text-warning" href="#">New Age</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -31,49 +35,173 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a
-                  class="nav-link text-uppercase"
-                  aria-current="page"
-                  href="#download"
-                  >Download</a
+                <a class="nav-link" aria-current="page" href="#download"
+                  >DOWNLOAD</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#features">Features</a>
+                <a class="nav-link" href="#features">FEATURES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact">CONTACT</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div class="container">
+      <div class="container hero">
         <div class="row">
-          <div class="col-md-6 p-5">
-            <p class="h1 fw-normal">
-              New Age is an app landing page that will help you beautifully
-              showcase your new mobile app, or anything else!
-            </p>
-            <a
-              href="#download"
-              class="text-uppercase btn btn-outline-light rounded-pill mt-5 px-5 py-2"
-              >Start now for free!</a
-            >
+          <div class="col-md-6 col-lg-5 my-auto order-md-1">
+            <div class="hero-img-box mx-auto">
+              <img src="img/phone.png" class="img-fluid" />
+            </div>
           </div>
-          <div class="col-md-6">
-            <div class="img-box mx-auto">
-              <img
-                src="img/phone.png"
-                alt="App demo screen"
-                class="img-fluid"
-              />
+          <div class="col-md-6 col-lg-7 my-auto order-md-0">
+            <div class="hero-text-box mx-auto">
+              <h1 class="hero-text text-white fw-normal">
+                New Age is an app landing page that will help you beautifully
+                showcase your new mobile app, or anything else!
+              </h1>
+              <a
+                href="#download"
+                class="btn btn-outline-light rounded-pill btn-cta mt-5"
+                >START NOW FOR FREE!</a
+              >
             </div>
           </div>
         </div>
       </div>
     </header>
+
+    <section id="download" class="download">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="download-heading text-center fw-normal">
+              Discover what all the<br />
+              buzz is about!
+            </h2>
+            <p class="text-center fw-semibold">
+              Our app is available on any mobile device! Download to get
+              started!
+            </p>
+            <div class="app-store-icons d-flex justify-content-center">
+              <div class="icon">
+                <img src="img/google-play-badge.png" class="img-fluid" />
+              </div>
+              <div class="icon">
+                <img src="img/app-store-badge.png" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container text-center">
+        <h2 class="features-heading fw-normal">
+          Unlimited Features, Unlimited Fun
+        </h2>
+        <p class="text-secondary">
+          Check out what you can do with this app theme!
+        </p>
+        <hr />
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="features-img-box">
+              <img src="img/phone.png" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-8 my-auto">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <div class="features-box">
+                    <i class="las la-mobile text-secondary"></i>
+                    <h3 class="fw-normal">Device Mockups</h3>
+                    <p class="text-secondary">
+                      Ready to use HTML/CSS device mockups, no Photoshop
+                      required!
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="features-box">
+                    <i class="las la-camera text-secondary"></i>
+                    <h3 class="fw-normal">Flexible Use</h3>
+                    <p class="text-secondary">
+                      Put an image, video, animation, or anything else in the
+                      screen!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <div class="features-box">
+                    <i class="las la-gift text-secondary"></i>
+                    <h3 class="fw-normal">Free to Use</h3>
+                    <p class="text-secondary">
+                      As always, this theme is free to download and use for any
+                      purpose!
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="features-box">
+                    <i class="las la-unlock text-secondary"></i>
+                    <h3 class="fw-normal">Open Source</h3>
+                    <p class="text-secondary">
+                      Since this theme is MIT licensed, you can use it
+                      commercially!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contant" class="contact">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col">
+            <h2 class="text-white fw-normal mb-5">
+              Stop waiting.<br />Start building.
+            </h2>
+            <a
+              href="#download"
+              class="btn btn-outline-light rounded-pill btn-cta text-uppercase"
+              >Let's get started!</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-center">
+      <h2 class="fw-normal mb-4">
+        We <span><i class="las la-heart heart"></i></span> new friends!
+      </h2>
+      <div>
+        <a href="https://twitter.com/?lang=pl" target="_blank">
+          <i class="lab la-twitter twitter rounded-circle"></i>
+        </a>
+
+        <a href="https://pl-pl.facebook.com/" target="_blank">
+          <i class="lab la-facebook-f facebook rounded-circle"></i>
+        </a>
+
+        <a href="https://www.google.pl/" target="_blank">
+          <i class="lab la-google-plus google-plus rounded-circle"></i>
+        </a>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
