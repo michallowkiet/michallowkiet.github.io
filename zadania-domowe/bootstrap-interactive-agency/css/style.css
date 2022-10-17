@@ -1,0 +1,158 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+section {
+  padding: 160px 0;
+}
+
+.main-btn {
+  padding: 1.25rem 2rem;
+  font-size: 13px;
+}
+
+.header {
+  background-image: url("../img/header-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.375rem;
+}
+
+.main-nav {
+  font-size: 11px;
+}
+
+.hero {
+  padding: 230px 0 200px 0;
+}
+
+.main-heading {
+  font-family: "Noto Serif", serif;
+}
+
+.main-subheading {
+  font-size: 3.25rem;
+}
+
+/* Services */
+
+.icon {
+  display: inline-block;
+  font-size: 2.75rem;
+  padding: 1rem 1.75rem;
+}
+
+/* Portfolio */
+
+.img-overlay-container {
+  position: relative;
+}
+
+.icon-container {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 193, 7, 0.9);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.img-overlay-icon {
+  fill: #fff;
+  width: 15%;
+}
+
+.icon-container:hover {
+  opacity: 1;
+}
+
+/* About */
+
+/* .about-img {
+  border: 8px solid #e9ecef;
+  position: relative;
+}
+
+.about-img::after {
+  position: absolute;
+  content: "";
+  width: 2%;
+  background-color: #e9ecef;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  bottom: 100%;
+}
+
+.row {
+  margin-top: 5rem;
+} */
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: #e9ecef;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.timeline-box {
+  position: relative;
+  width: 50%;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.timeline-box-text {
+  width: 47%;
+}
+
+.left {
+  justify-content: end;
+  left: 5%;
+}
+
+.right {
+  justify-content: start;
+  flex-direction: row-reverse;
+  right: -45%;
+}
+
+.timeline-box-img {
+  width: 20%;
+}
+
+.timeline-img {
+  border: 6px solid #e9ecef;
+  border-radius: 100%;
+}
+
+.timeline-box-1 {
+  width: 20%;
+  padding: 1.08rem 2rem;
+  border: 6px solid #e9ecef;
+}
