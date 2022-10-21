@@ -314,4 +314,46 @@ body {
 .main-nav-container .main-nav-menu .main-menu li a {
   text-decoration: none;
   color: #fff;
+}
+@media all and (min-width: 992px) {
+  .main-nav-container .brand {
+    height: 80px;
+  }
+  .main-nav-container .brand .logo {
+    height: 100%;
+  }
+  .main-nav-container .mobile-hamburger {
+    display: none;
+  }
+  .main-nav-container .mobile-close {
+    display: none;
+  }
+  .main-nav-container .main-nav-menu {
+    display: block;
+    position: static;
+    max-width: 100%;
+    width: 100%;
+    text-align: right;
+    background-color: #fff;
+    padding: 1.5rem 0;
+  }
+  .main-nav-container .main-nav-menu .main-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 0;
+    max-width: 500px;
+    padding: 0;
+    font-size: 1rem;
+  }
+  .main-nav-container .main-nav-menu .main-menu li {
+    margin-bottom: 0rem;
+  }
+  .main-nav-container .main-nav-menu .main-menu li a {
+    text-decoration: none;
+    color: #473452;
+  }
+  .main-nav-container .main-nav-menu .main-menu li a:hover, .main-nav-container .main-nav-menu .main-menu li a:active {
+    color: #1ba4ce;
+  }
 }/*# sourceMappingURL=style.css.map */

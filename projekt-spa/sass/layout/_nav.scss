@@ -2,6 +2,7 @@
   position: relative;
   padding: 0.75em 0;
 }
+
 .main-nav-container {
   @include d-flex;
   @include justify-content(space-between);
@@ -58,6 +59,59 @@
         a {
           text-decoration: none;
           color: $color-neutral-100;
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: $lg) {
+    .brand {
+      height: 80px;
+
+      .logo {
+        height: 100%;
+      }
+    }
+
+    .mobile-hamburger {
+      display: none;
+    }
+
+    .mobile-close {
+      display: none;
+    }
+
+    .main-nav-menu {
+      display: block;
+      position: static;
+      max-width: 100%;
+      width: 100%;
+      text-align: right;
+      background-color: $color-neutral-100;
+      padding: 1.5rem 0;
+
+      .main-menu {
+        @include d-flex;
+        @include justify-content(space-evenly);
+        align-items: flex-end;
+
+        margin-bottom: 0;
+        max-width: 500px;
+        padding: 0;
+        font-size: 1rem;
+
+        li {
+          margin-bottom: 0rem;
+
+          a {
+            text-decoration: none;
+            color: $color-secondary;
+
+            &:hover,
+            &:active {
+              color: $color-primary;
+            }
+          }
         }
       }
     }
