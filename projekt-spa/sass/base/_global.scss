@@ -1,4 +1,29 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
-  font-size: $base-font-size;
   font-family: $font-primary;
+  color: $color-primary;
+}
+
+.container {
+  max-width: $container-sm;
+  width: $container-sm;
+  padding: 0 1.5em;
+  margin: 0 auto;
+}
+
+@media all and (min-width: $lg) {
+  .container {
+    max-width: $container-lg;
+  }
+}
+
+@media all and (min-width: $xl) {
+  .container {
+    max-width: $container-xl;
+  }
 }

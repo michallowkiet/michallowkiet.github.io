@@ -1,0 +1,12 @@
+@mixin d-flex {
+  display: flex;
+}
+
+@mixin d-flex-column {
+  @include d-flex;
+  flex-direction: column;
+}
+
+@mixin justify-content($option) {
+  justify-content: $option;
+}

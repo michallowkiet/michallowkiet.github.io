@@ -1,0 +1,65 @@
+.main-nav {
+  position: relative;
+  padding: 0.75em 0;
+}
+.main-nav-container {
+  @include d-flex;
+  @include justify-content(space-between);
+
+  .brand {
+    height: 50px;
+
+    .logo {
+      height: 100%;
+    }
+  }
+
+  %mobile-nav-icons {
+    font-size: 1.75rem;
+    line-height: 50px;
+    cursor: pointer;
+  }
+
+  .mobile-hamburger {
+    @extend %mobile-nav-icons;
+  }
+
+  .mobile-close {
+    @extend %mobile-nav-icons;
+    color: $color-neutral-100;
+    font-size: 2rem;
+  }
+
+  .main-nav-menu {
+    display: none;
+    position: absolute;
+    max-width: 460px;
+    width: 100%;
+    top: 0;
+    right: 0;
+
+    text-align: right;
+    background-color: $color-primary;
+    padding: 0.75em 1.5em 2em;
+
+    &.open {
+      display: block;
+    }
+
+    .main-menu {
+      list-style: none;
+      padding: 0 1.5rem;
+      font-size: 3.125rem;
+      text-transform: uppercase;
+
+      li {
+        margin-bottom: 3rem;
+
+        a {
+          text-decoration: none;
+          color: $color-neutral-100;
+        }
+      }
+    }
+  }
+}

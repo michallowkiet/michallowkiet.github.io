@@ -236,7 +236,82 @@ input[type=checkbox], input[type=radio] {
   padding: 0;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
-  font-size: 10px;
   font-family: "Roboto", sans-serif;
+  color: #1ba4ce;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 1.5em;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.main-nav {
+  position: relative;
+  padding: 0.75em 0;
+}
+
+.main-nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+.main-nav-container .brand {
+  height: 50px;
+}
+.main-nav-container .brand .logo {
+  height: 100%;
+}
+.main-nav-container .mobile-close, .main-nav-container .mobile-hamburger {
+  font-size: 1.75rem;
+  line-height: 50px;
+  cursor: pointer;
+}
+.main-nav-container .mobile-close {
+  color: #fff;
+  font-size: 2rem;
+}
+.main-nav-container .main-nav-menu {
+  display: none;
+  position: absolute;
+  max-width: 460px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  text-align: right;
+  background-color: #1ba4ce;
+  padding: 0.75em 1.5em 2em;
+}
+.main-nav-container .main-nav-menu.open {
+  display: block;
+}
+.main-nav-container .main-nav-menu .main-menu {
+  list-style: none;
+  padding: 0 1.5rem;
+  font-size: 3.125rem;
+  text-transform: uppercase;
+}
+.main-nav-container .main-nav-menu .main-menu li {
+  margin-bottom: 3rem;
+}
+.main-nav-container .main-nav-menu .main-menu li a {
+  text-decoration: none;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
