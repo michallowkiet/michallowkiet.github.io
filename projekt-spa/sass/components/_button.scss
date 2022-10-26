@@ -18,6 +18,10 @@
   text-transform: uppercase;
 }
 
+.btn--accent {
+  background-color: $color-accent;
+}
+
 .btn-hero {
   @extend %btn;
 }

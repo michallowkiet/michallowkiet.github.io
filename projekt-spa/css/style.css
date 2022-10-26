@@ -356,6 +356,10 @@ section {
   text-transform: uppercase;
 }
 
+.btn--accent {
+  background-color: #30383b;
+}
+
 .btn-watch {
   display: flex;
   justify-content: center;
@@ -370,16 +374,85 @@ section {
 }
 
 .card-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
+  margin-top: 3rem;
 }
 .card-container .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
   box-shadow: 0 5px 20px #f0f0f0;
+}
+.card-container .card img {
+  align-self: stretch;
+}
+.card-container .card a {
+  margin-bottom: 2rem;
+}
+.card-container .team-card {
+  position: relative;
+}
+.card-container .team-card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 6rem;
+}
+.card-container .team-card .team-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 75%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 3.5rem 0;
+  bottom: -10%;
+  left: 12.5%;
+  right: 12.5%;
+  transition: all 0.3s linear;
+}
+.card-container .team-card .team-info .team-socials {
+  visibility: hidden;
+  opacity: 0;
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  transition: all 0.3s linear;
+}
+.card-container .team-card .team-info .team-socials a {
+  color: #473452;
+  font-size: 2.125rem;
+  text-decoration: none;
+}
+.card-container .team-card .team-info .team-socials a i {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75em;
+  border: 1px solid #473452;
+  border-radius: 50%;
+}
+.card-container .team-card .team-info .team-socials a i:hover {
+  background-color: #1ba4ce;
+  color: #fff;
+}
+.card-container .team-card .team-info:hover {
+  bottom: 0;
+  box-shadow: 0 5px 20px #f0f0f0;
+}
+.card-container .team-card .team-info:hover .team-socials {
+  visibility: visible;
+  opacity: 1;
 }
 
 .main-nav-container {
@@ -554,4 +627,8 @@ section {
 }
 .features .feature-box-4 {
   background-image: url("../../img/services-bg-4.jpg");
+}
+
+.apointment img {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
