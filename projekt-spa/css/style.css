@@ -360,6 +360,13 @@ section {
   background-color: #30383b;
 }
 
+.btn-form {
+  background-color: #fff;
+  color: #000;
+  text-transform: none;
+  border: none;
+}
+
 .btn-watch {
   display: flex;
   justify-content: center;
@@ -396,6 +403,7 @@ section {
 }
 .card-container .team-card {
   position: relative;
+  overflow: hidden;
 }
 .card-container .team-card img {
   width: 100%;
@@ -453,6 +461,55 @@ section {
 .card-container .team-card .team-info:hover .team-socials {
   visibility: visible;
   opacity: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+.form .form-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.form .form-info input,
+.form .form-info select,
+.form .form-info textarea {
+  background-color: #1ba4ce;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.25em 0;
+}
+.form .form-info input::-moz-placeholder {
+  color: #fff;
+}
+.form .form-info input:-ms-input-placeholder {
+  color: #fff;
+}
+.form .form-info input::placeholder {
+  color: #fff;
+}
+.form .form-info select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(../../img/icons/arrow-down-white.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 1.2rem;
+}
+.form .form-info input[type=date]::-webkit-calendar-picker-indicator {
+  background-image: url(../../img/icons/calendar-white.svg);
+}
+.form .form-info input[type=time]::-webkit-calendar-picker-indicator {
+  background-image: url(../../img/icons/clock-white.svg);
 }
 
 .main-nav-container {
@@ -629,6 +686,9 @@ section {
   background-image: url("../../img/services-bg-4.jpg");
 }
 
+.apointment {
+  background-color: #1ba4ce;
+}
 .apointment img {
   display: none;
 }/*# sourceMappingURL=style.css.map */

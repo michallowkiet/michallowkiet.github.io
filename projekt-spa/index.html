@@ -194,24 +194,37 @@
     <section class="apointment">
       <img src="img/contact-bg.jpg" alt="" />
 
-      <form>
+      <form class="form">
         <div class="form-info">
-          <input type="text" name="email" id="name" />
-          <input type="email" name="email" id="email" />
+          <input type="text" name="email" id="name" placeholder="Name" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
           <select name="service" id="service">
+            <option value="">Select service</option>
             <option value="message">Message Therapy</option>
             <option value="beautyCare">Beauty Care</option>
             <option value="reflexology">Executive Reflexology</option>
           </select>
-          <input type="tel" name="phone" id="phone" />
-          <input type="date" name="date" id="date" />
-          <input type="time" name="time" id="time" />
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone number"
+          />
+          <input type="date" name="date" id="date" placeholder="Date" />
+          <input type="time" name="time" id="time" value="Time" />
         </div>
         <div class="form-note">
           <textarea name="note" id="note"></textarea>
         </div>
 
-        <button type="submit">Make An Appointment</button>
+        <button type="submit" class="btn-primary btn-form">
+          Make An Appointment
+        </button>
       </form>
     </section>
 

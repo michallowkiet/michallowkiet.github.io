@@ -22,6 +22,13 @@
   background-color: $color-accent;
 }
 
+.btn-form {
+  background-color: $color-neutral-100;
+  color: #000;
+  text-transform: none;
+  border: none;
+}
+
 .btn-hero {
   @extend %btn;
 }
