@@ -1,117 +1,108 @@
-.main-nav {
-  position: relative;
-  padding: 0.75em 0;
-}
-
 .main-nav-container {
-  @include d-flex;
-  @include justify-content(space-between);
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
 
   .brand {
-    height: 50px;
-
-    .logo {
-      height: 100%;
-    }
-  }
-
-  %mobile-nav-icons {
-    font-size: 1.75rem;
-    line-height: 50px;
-    cursor: pointer;
+    max-width: 70px;
   }
 
   .mobile-hamburger {
-    @extend %mobile-nav-icons;
-  }
-
-  .mobile-close {
-    @extend %mobile-nav-icons;
-    color: $color-neutral-100;
-    font-size: 2rem;
+    font-size: $font-size-500;
   }
 
   .main-nav-menu {
     display: none;
     position: absolute;
-    max-width: 460px;
-    width: 100%;
     top: 0;
     right: 0;
-
-    text-align: right;
+    max-width: 420px;
+    width: 100%;
+    padding: 1em;
     background-color: $color-primary;
-    padding: 0.75em 1.5em 2em;
+
+    .mobile-close {
+      font-size: $font-size-500;
+      color: $color-neutral-100;
+      display: flex;
+      justify-content: flex-end;
+
+      i {
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+          color: $color-secondary;
+        }
+      }
+    }
+
+    .main-menu {
+      padding: 1em 1em;
+      text-align: right;
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-neutral-100;
+        font-size: $font-size-800;
+
+        &:hover {
+          text-decoration: underline;
+          color: $color-secondary;
+        }
+      }
+
+      li {
+        margin-bottom: 1.5em;
+      }
+    }
 
     &.open {
       display: block;
     }
-
-    .main-menu {
-      list-style: none;
-      padding: 0 1.5rem;
-      font-size: 3.125rem;
-      text-transform: uppercase;
-
-      li {
-        margin-bottom: 3rem;
-
-        a {
-          text-decoration: none;
-          color: $color-neutral-100;
-        }
-      }
-    }
   }
 
-  @media all and (min-width: $lg) {
-    .brand {
-      height: 80px;
+  @media (min-width: $lg) {
+    max-width: 550px;
+    justify-content: flex-start;
+    gap: 2em;
 
-      .logo {
-        height: 100%;
-      }
+    .brand {
+      max-width: 90px;
     }
 
     .mobile-hamburger {
       display: none;
     }
 
-    .mobile-close {
-      display: none;
-    }
-
     .main-nav-menu {
-      display: block;
       position: static;
+      display: flex;
+
       max-width: 100%;
       width: 100%;
-      text-align: right;
-      background-color: $color-neutral-100;
-      padding: 1.5rem 0;
+      padding: 0;
+      background-color: transparent;
+
+      .mobile-close {
+        display: none;
+      }
 
       .main-menu {
-        @include d-flex;
-        @include justify-content(space-evenly);
-        align-items: flex-end;
-
-        margin-bottom: 0;
-        max-width: 500px;
         padding: 0;
-        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 0.5em;
+
+        a {
+          color: $color-secondary;
+          font-size: $font-size-200;
+        }
 
         li {
-          margin-bottom: 0rem;
-
-          a {
-            text-decoration: none;
-            color: $color-secondary;
-
-            &:hover,
-            &:active {
-              color: $color-primary;
-            }
-          }
+          margin-bottom: 0;
         }
       }
     }

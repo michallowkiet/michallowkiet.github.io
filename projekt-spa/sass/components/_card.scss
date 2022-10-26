@@ -1,0 +1,13 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: calc($vertical-spacer + 2rem);
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: calc($vertical-spacer + 1rem);
+    padding: 1rem;
+    box-shadow: $box-shadow;
+  }
+}
