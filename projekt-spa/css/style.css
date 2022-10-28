@@ -589,18 +589,18 @@ select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-image: url(../../img/icons/arrow-down-white.svg);
+  background-image: url(../img/icons/arrow-down-white.svg);
   background-repeat: no-repeat;
   background-position: center right;
   background-size: 1.2rem;
 }
 
 input[type=date]::-webkit-calendar-picker-indicator {
-  background-image: url(../../img/icons/calendar-white.svg);
+  background-image: url(../img/icons/calendar-white.svg);
 }
 
 input[type=time]::-webkit-calendar-picker-indicator {
-  background-image: url(../../img/icons/clock-white.svg);
+  background-image: url(../img/icons/clock-white.svg);
 }
 
 .form {
