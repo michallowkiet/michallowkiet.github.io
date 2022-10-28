@@ -8,8 +8,16 @@
   gap: 1.5rem;
 }
 
+.item-spacing > * + * {
+  margin-top: 1.5rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-white {
+  color: #fff;
 }
 
 article,
@@ -300,7 +308,8 @@ i {
   display: inline-block;
 }
 
-section {
+section,
+footer {
   padding-block: 3.5rem;
 }
 
@@ -373,7 +382,6 @@ section {
   background-color: #fff;
   color: #000;
   font-weight: 700;
-  text-transform: none;
   border: none;
 }
 
@@ -509,6 +517,26 @@ textarea::placeholder {
   color: #fff;
 }
 
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5em 1em;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {
+  font-weight: 300;
+}
+
+.contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder {
+  font-weight: 300;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  font-weight: 300;
+}
+
 textarea {
   height: 100px;
 }
@@ -641,6 +669,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .main-nav-container .main-nav-menu .main-menu a {
     color: #473452;
     font-size: 1rem;
+    font-weight: bold;
   }
   .main-nav-container .main-nav-menu .main-menu li {
     margin-bottom: 0;
@@ -736,4 +765,57 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 .blog-details {
   font-size: 1.25rem;
+}
+
+.contact {
+  background-color: #1ba4ce;
+  color: #fff;
+  font-weight: 300;
+}
+.contact .contact-address {
+  width: 80%;
+  padding-block: 1rem;
+  margin: 0 auto;
+}
+.contact .contact-address .row {
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.contact .contact-address .row img {
+  flex-grow: 0;
+  width: 40px;
+}
+.contact .contact-address .row .text {
+  margin-left: 2rem;
+}
+.contact .contact-form {
+  margin-top: 2rem;
+}
+
+.footer .brand {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+.footer .menu {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 0.5em;
+}
+.footer .menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #473452;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.footer .menu a:hover {
+  text-decoration: underline;
+  color: #473452;
 }/*# sourceMappingURL=style.css.map */

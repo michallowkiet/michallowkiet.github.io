@@ -5,6 +5,14 @@
   gap: $vertical-spacer;
 }
 
+.item-spacing > * + * {
+  margin-top: $vertical-spacer;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-white {
+  color: $color-neutral-100;
 }
