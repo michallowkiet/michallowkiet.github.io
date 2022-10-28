@@ -356,15 +356,30 @@ section {
   text-transform: uppercase;
 }
 
+.btn-primary:hover,
+.btn-hero:hover {
+  background-color: #30383b;
+}
+
 .btn--accent {
   background-color: #30383b;
+}
+
+.btn--accent:hover {
+  background-color: #1ba4ce;
 }
 
 .btn-form {
   background-color: #fff;
   color: #000;
+  font-weight: 700;
   text-transform: none;
   border: none;
+}
+
+.btn-form:hover {
+  background-color: #30383b;
+  color: #fff;
 }
 
 .btn-watch {
@@ -378,6 +393,10 @@ section {
 .btn-watch i {
   color: #473452;
   font-size: 2.125rem;
+}
+
+.btn-watch:hover {
+  color: #1ba4ce;
 }
 
 .card-container {
@@ -429,9 +448,9 @@ section {
   visibility: hidden;
   opacity: 0;
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 2rem;
   transition: all 0.3s linear;
 }
@@ -463,6 +482,55 @@ section {
   opacity: 1;
 }
 
+input,
+select,
+textarea {
+  display: inline-block;
+  background-color: #1ba4ce;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.25em 0;
+  width: 100%;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #fff;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #fff;
+}
+
+textarea {
+  height: 100px;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(../../img/icons/arrow-down-white.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 1.2rem;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  background-image: url(../../img/icons/calendar-white.svg);
+}
+
+input[type=time]::-webkit-calendar-picker-indicator {
+  background-image: url(../../img/icons/clock-white.svg);
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -476,40 +544,13 @@ section {
   flex-direction: column;
   gap: 1.5rem;
 }
-.form .form-info input,
-.form .form-info select,
-.form .form-info textarea {
-  background-color: #1ba4ce;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-  color: #fff;
-  text-transform: uppercase;
-  padding: 0.25em 0;
+.form .form-datetime {
+  display: flex;
+  gap: 1em;
 }
-.form .form-info input::-moz-placeholder {
-  color: #fff;
-}
-.form .form-info input:-ms-input-placeholder {
-  color: #fff;
-}
-.form .form-info input::placeholder {
-  color: #fff;
-}
-.form .form-info select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-image: url(../../img/icons/arrow-down-white.svg);
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: 1.2rem;
-}
-.form .form-info input[type=date]::-webkit-calendar-picker-indicator {
-  background-image: url(../../img/icons/calendar-white.svg);
-}
-.form .form-info input[type=time]::-webkit-calendar-picker-indicator {
-  background-image: url(../../img/icons/clock-white.svg);
+.form .form-note {
+  margin-top: 1rem;
+  width: 100%;
 }
 
 .main-nav-container {
@@ -655,7 +696,7 @@ section {
   background-size: cover;
 }
 .features .feature-box .feature-mask {
-  background-color: rgba(27, 164, 206, 0.85);
+  background-color: rgba(27, 164, 206, 0.6);
   color: #fff;
   height: 100%;
   display: none;
@@ -686,9 +727,13 @@ section {
   background-image: url("../../img/services-bg-4.jpg");
 }
 
-.apointment {
+.appointment {
   background-color: #1ba4ce;
 }
-.apointment img {
+.appointment img {
   display: none;
+}
+
+.blog-details {
+  font-size: 1.25rem;
 }/*# sourceMappingURL=style.css.map */

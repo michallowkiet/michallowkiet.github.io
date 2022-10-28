@@ -1,6 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
+
   align-items: center;
   gap: 2rem;
   padding: 1rem;
@@ -10,44 +11,15 @@
     display: flex;
     flex-direction: column;
     gap: $vertical-spacer;
+  }
 
-    input,
-    select,
-    textarea {
-      background-color: $color-primary;
-      border: none;
-      outline: none;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-      color: $color-neutral-100;
-      text-transform: uppercase;
-      padding: 0.25em 0;
-    }
+  .form-datetime {
+    display: flex;
+    gap: 1em;
+  }
 
-    input::placeholder {
-      color: $color-neutral-100;
-    }
-
-    select {
-      appearance: none;
-      background-image: url(../../img/icons/arrow-down-white.svg);
-      background-repeat: no-repeat;
-      background-position: center right;
-      background-size: 1.2rem;
-    }
-
-    // input[type="date"]::-webkit-datetime-edit-month-field,
-    // input[type="date"]::-webkit-datetime-edit-day-field,
-    // input[type="date"]::-webkit-datetime-edit-year-field,
-    // input[type="date"]::-webkit-datetime-edit-text {
-    //   // display: none;
-    // }
-
-    input[type="date"]::-webkit-calendar-picker-indicator {
-      background-image: url(../../img/icons/calendar-white.svg);
-    }
-
-    input[type="time"]::-webkit-calendar-picker-indicator {
-      background-image: url(../../img/icons/clock-white.svg);
-    }
+  .form-note {
+    margin-top: 1rem;
+    width: 100%;
   }
 }
