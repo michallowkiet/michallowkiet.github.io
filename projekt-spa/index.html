@@ -193,16 +193,23 @@
 
     <section class="appointment">
       <div class="img"></div>
-      <form class="form">
+      <form class="form" id="appointmentForm">
         <div class="form-info">
-          <input type="text" name="email" id="name" placeholder="Name" />
+          <input
+            type="text"
+            name="email"
+            id="name"
+            placeholder="Name"
+            class="form-field"
+          />
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Email Address"
+            class="form-field"
           />
-          <select name="service" id="service">
+          <select name="service" id="service" class="form-field">
             <option value="">Select service</option>
             <option value="message">Message Therapy</option>
             <option value="beautyCare">Beauty Care</option>
@@ -213,19 +220,38 @@
             name="phone"
             id="phone"
             placeholder="Phone number"
+            class="form-field"
           />
           <div class="form-datetime">
-            <input type="date" name="date" id="date" placeholder="Date" />
-            <input type="time" name="time" id="time" value="Time" />
+            <input
+              type="date"
+              name="date"
+              id="date"
+              placeholder="Date"
+              class="form-field"
+            />
+            <input
+              type="time"
+              name="time"
+              id="time"
+              value="Time"
+              class="form-field"
+            />
           </div>
         </div>
         <div class="form-note">
-          <textarea name="note" id="note" placeholder="Your Notes"></textarea>
+          <textarea
+            name="note"
+            id="note"
+            placeholder="Your Notes"
+            class="form-field"
+          ></textarea>
         </div>
 
         <button type="submit" class="btn-primary btn-form">
           Make An Appointment
         </button>
+        <div class="errors"></div>
       </form>
     </section>
 
@@ -310,7 +336,7 @@
               </div>
             </div>
             <div class="row">
-              <img src="img/icons/icon-tel.png" alt="" class="tel"/>
+              <img src="img/icons/icon-tel.png" alt="" class="tel" />
               <div class="text">
                 <p>+02 365 2365 3265 (02)</p>
                 <p>+01 365 2365 3265 (04)</p>

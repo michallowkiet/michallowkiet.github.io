@@ -63,3 +63,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input[type="time"]::-webkit-calendar-picker-indicator {
   background-image: url(../img/icons/clock-white.svg);
 }
+
+.error {
+  border-bottom: 1px solid red;
+}
+
+.errors {
+  font-size: $font-size-300;
+  color: $color-neutral-100;
+}
