@@ -18,7 +18,7 @@ body {
 
 @media (min-width: $lg) {
   body {
-    background-image: url(../../img/header-bg.png);
+    background-image: url("../img/header-bg.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: max(450px, 37%);

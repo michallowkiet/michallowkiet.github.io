@@ -275,7 +275,7 @@ body {
 
 @media (min-width: 992px) {
   body {
-    background-image: url(../../img/header-bg.png);
+    background-image: url("../img/header-bg.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: max(450px, 37%);
@@ -736,7 +736,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 .header::before {
   content: "";
-  background-image: url("./img/header-flowers.png");
+  background-image: url("../img/header-flowers.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -814,16 +814,16 @@ input[type=time]::-webkit-calendar-picker-indicator {
   display: flex;
 }
 .features .feature-box-1 {
-  background-image: url("../../img/services-bg-1.jpg");
+  background-image: url("../img/services-bg-1.jpg");
 }
 .features .feature-box-2 {
-  background-image: url("../../img/services-bg-2.jpg");
+  background-image: url("../img/services-bg-2.jpg");
 }
 .features .feature-box-3 {
-  background-image: url("../../img/services-bg-3.jpg");
+  background-image: url("../img/services-bg-3.jpg");
 }
 .features .feature-box-4 {
-  background-image: url("../../img/services-bg-4.jpg");
+  background-image: url("../img/services-bg-4.jpg");
 }
 
 @media (min-width: 992px) {
@@ -844,7 +844,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   }
   .appointment .img {
     width: 40%;
-    background-image: url("./img/contact-bg.jpg");
+    background-image: url("../img/contact-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
