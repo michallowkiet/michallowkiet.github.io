@@ -273,6 +273,15 @@ body {
   font-size: 1.5rem;
 }
 
+@media (min-width: 992px) {
+  body {
+    background-image: url(../../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: max(450px, 37%);
+    font-size: 1rem;
+  }
+}
 h1,
 h2,
 h3 {
@@ -294,6 +303,15 @@ h3 {
   color: #473452;
 }
 
+@media (min-width: 992px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+p {
+  max-width: 800px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -313,6 +331,12 @@ footer {
   padding-block: 3.5rem;
 }
 
+@media (min-width: 992px) {
+  section,
+footer {
+    padding-block: 4.5rem;
+  }
+}
 .subheading {
   font-family: "Bellota", cursive;
   font-size: 1.5rem;
@@ -446,7 +470,7 @@ footer {
   width: 75%;
   margin: 0 auto;
   background-color: #fff;
-  padding: 3.5rem 0;
+  padding: 2.5rem 0;
   bottom: -10%;
   left: 12.5%;
   right: 12.5%;
@@ -490,6 +514,15 @@ footer {
   opacity: 1;
 }
 
+@media (min-width: 992px) {
+  .card-container {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .card-container .team-card .team-info .team-socials a {
+    font-size: 1.5rem;
+  }
+}
 input,
 select,
 textarea {
@@ -504,14 +537,18 @@ textarea {
   width: 100%;
 }
 
+@media (min-width: 992px) {
+  input,
+select {
+    width: 47%;
+  }
+}
 input::-moz-placeholder, textarea::-moz-placeholder {
   color: #fff;
 }
-
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #fff;
 }
-
 input::placeholder,
 textarea::placeholder {
   color: #fff;
@@ -537,6 +574,13 @@ textarea::placeholder {
   font-weight: 300;
 }
 
+@media (min-width: 992px) {
+  .contact-form input,
+.contact-form textarea {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
+}
 textarea {
   height: 100px;
 }
@@ -579,6 +623,17 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .form .form-note {
   margin-top: 1rem;
   width: 100%;
+}
+@media (min-width: 992px) {
+  .form .form-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .form .form-datetime {
+    width: 100%;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
 }
 
 .main-nav-container {
@@ -679,7 +734,21 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .header {
   padding-bottom: 2rem;
 }
+.header::before {
+  content: "";
+  background-image: url("../../img/header-flowers.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 7%;
+  left: -5%;
+  width: 10%;
+  height: 15%;
+  z-index: -1;
+}
 .header .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -698,7 +767,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 @media (min-width: 992px) {
   .header .hero {
-    max-width: 42%;
+    margin-top: 5rem;
+    max-width: 50%;
   }
 }
 
@@ -756,15 +826,38 @@ input[type=time]::-webkit-calendar-picker-indicator {
   background-image: url("../../img/services-bg-4.jpg");
 }
 
+@media (min-width: 992px) {
+  .features {
+    flex-direction: row;
+    gap: 0;
+  }
+}
 .appointment {
   background-color: #1ba4ce;
 }
-.appointment img {
-  display: none;
+@media (min-width: 992px) {
+  .appointment {
+    padding-block: 0;
+    margin-block: 4.5rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .appointment .img {
+    width: 40%;
+    background-image: url(../../img/contact-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .appointment .form {
+    width: 60%;
+    padding: 5rem 4rem;
+  }
 }
 
 .blog-details {
-  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
 }
 
 .contact {
@@ -791,8 +884,26 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .contact .contact-address .row .text {
   margin-left: 2rem;
 }
+.contact .cols-2 {
+  display: flex;
+  flex-direction: column;
+}
 .contact .contact-form {
   margin-top: 2rem;
+}
+@media (min-width: 992px) {
+  .contact .cols-2 {
+    margin-top: 2rem;
+    width: 100%;
+    flex-direction: row;
+  }
+  .contact .contact-form {
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .footer .brand {

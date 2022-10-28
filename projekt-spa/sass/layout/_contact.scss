@@ -28,7 +28,28 @@
     }
   }
 
+  .cols-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
   .contact-form {
     margin-top: 2rem;
+  }
+
+  @media (min-width: $lg) {
+    .cols-2 {
+      margin-top: 2rem;
+      width: 100%;
+      flex-direction: row;
+    }
+
+    .contact-form {
+      width: 100%;
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 }

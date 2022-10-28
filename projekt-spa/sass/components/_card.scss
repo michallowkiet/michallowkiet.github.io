@@ -41,7 +41,7 @@
 
       margin: 0 auto;
       background-color: $color-neutral-100;
-      padding: 3.5rem 0;
+      padding: 2.5rem 0;
       bottom: -10%;
       left: 12.5%;
       right: 12.5%;
@@ -88,6 +88,23 @@
         .team-socials {
           visibility: visible;
           opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $lg) {
+  .card-container {
+    flex-direction: row;
+    gap: $vertical-spacer;
+
+    .team-card {
+      .team-info {
+        .team-socials {
+          a {
+            font-size: $font-size-400;
+          }
         }
       }
     }

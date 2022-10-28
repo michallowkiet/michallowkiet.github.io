@@ -49,3 +49,10 @@
     background-image: url("../../img/services-bg-4.jpg");
   }
 }
+
+@media (min-width: $lg) {
+  .features {
+    flex-direction: row;
+    gap: 0;
+  }
+}

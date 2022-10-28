@@ -12,6 +12,13 @@ textarea {
   width: 100%;
 }
 
+@media (min-width: $lg) {
+  input,
+  select {
+    width: 47%;
+  }
+}
+
 input::placeholder,
 textarea::placeholder {
   color: $color-neutral-100;
@@ -27,6 +34,14 @@ textarea::placeholder {
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   font-weight: 300;
+}
+
+@media (min-width: $lg) {
+  .contact-form input,
+  .contact-form textarea {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
 }
 
 textarea {

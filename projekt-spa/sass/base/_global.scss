@@ -16,6 +16,16 @@ body {
   font-size: $font-size-400;
 }
 
+@media (min-width: $lg) {
+  body {
+    background-image: url(../../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: max(450px, 37%);
+    font-size: $font-size-200;
+  }
+}
+
 h1,
 h2,
 h3 {
@@ -37,6 +47,16 @@ h3 {
   color: $color-secondary;
 }
 
+@media (min-width: $lg) {
+  h3 {
+    font-size: $font-size-400;
+  }
+}
+
+p {
+  max-width: 800px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -54,6 +74,13 @@ i {
 section,
 footer {
   padding-block: 3.5rem;
+}
+
+@media (min-width: $lg) {
+  section,
+  footer {
+    padding-block: 4.5rem;
+  }
 }
 
 .subheading {

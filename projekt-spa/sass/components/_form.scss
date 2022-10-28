@@ -22,4 +22,25 @@
     margin-top: 1rem;
     width: 100%;
   }
+
+  @media (min-width: $lg) {
+    .form-info {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      // & > * {
+      //   width: 47%;
+      // }
+    }
+
+    .form-datetime {
+      width: 100%;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+
+      // & > * {
+      //   width: 47%;
+      // }
+    }
+  }
 }
