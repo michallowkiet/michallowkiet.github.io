@@ -656,6 +656,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   width: 100%;
   padding: 1em;
   background-color: #1ba4ce;
+  z-index: 1000;
 }
 .main-nav-container .main-nav-menu .mobile-close {
   font-size: 2.125rem;

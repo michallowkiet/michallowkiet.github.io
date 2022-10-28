@@ -20,6 +20,7 @@
     width: 100%;
     padding: 1em;
     background-color: $color-primary;
+    z-index: 1000;
 
     .mobile-close {
       font-size: $font-size-500;
