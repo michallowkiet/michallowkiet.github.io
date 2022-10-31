@@ -628,6 +628,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .form .form-datetime {
   display: flex;
   gap: 1em;
+  justify-content: space-between;
 }
 .form .form-note {
   margin-top: 1rem;
@@ -637,6 +638,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   .form .form-info {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .form .form-datetime {
     width: 100%;
@@ -655,6 +657,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 .main-nav-container .mobile-hamburger {
   font-size: 2.125rem;
+  cursor: pointer;
 }
 .main-nav-container .main-nav-menu {
   display: none;
@@ -675,6 +678,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 .main-nav-container .main-nav-menu .mobile-close i {
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 .main-nav-container .main-nav-menu .mobile-close i:hover {
   transform: scale(1.1);
@@ -930,7 +934,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
   margin-bottom: 0.5em;
 }

@@ -9,6 +9,7 @@
 
   .mobile-hamburger {
     font-size: $font-size-500;
+    cursor: pointer;
   }
 
   .main-nav-menu {
@@ -30,6 +31,7 @@
 
       i {
         transition: transform 0.3s ease-in-out;
+        cursor: pointer;
 
         &:hover {
           transform: scale(1.1);

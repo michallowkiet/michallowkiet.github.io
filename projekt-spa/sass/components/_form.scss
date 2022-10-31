@@ -16,6 +16,7 @@
   .form-datetime {
     display: flex;
     gap: 1em;
+    justify-content: space-between;
   }
 
   .form-note {
@@ -27,10 +28,7 @@
     .form-info {
       flex-direction: row;
       flex-wrap: wrap;
-
-      // & > * {
-      //   width: 47%;
-      // }
+      justify-content: space-between;
     }
 
     .form-datetime {
