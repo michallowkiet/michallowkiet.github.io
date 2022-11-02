@@ -9,7 +9,7 @@ function ButtonsPanel(props) {
           props.buttonMethod("add");
         }}
       >
-        Add 1
+        Add {props.addValue}
       </button>
       <button
         onClick={() => {
