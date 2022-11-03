@@ -8,8 +8,9 @@ const Step = (props) => {
         type="number"
         min="1"
         step="1"
+        defaultValue="1"
+        ref={props.inputRef}
         onChange={props.steperMethod}
-        value={props.steperValue}
       />
     </div>
   );

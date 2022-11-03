@@ -6,24 +6,16 @@ class Clock extends Component {
     super(props);
 
     this.state = { date: new Date() };
-
-    console.log(`Initialization lifeCycle: constructor(props)`);
   }
 
   componentDidMount() {
     this.timerID = setInterval(() => {
       this.tick();
     }, 1000);
-    console.log(`Mounting lifeCycle: componentDidMount()`);
-  }
-
-  componentDidUpdate() {
-    console.log(`Updation lifeCycle: componentDidUpdate()`);
   }
 
   componentWillUnmount() {
     clearInterval(this.timerID);
-    console.log(`Unmounting lifeCycle: componentWillUnmount()`);
   }
 
   tick = () => {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Counter.css";
 
 import Display from "./Display";
@@ -7,6 +7,7 @@ import Clock from "./Clock";
 import Step from "./Step";
 
 const Counter = (props) => {
+  const inputRef = useRef();
   const [state, setState] = useState({
     counterValue: props.initValue,
     showClock: true,
@@ -20,13 +21,13 @@ const Counter = (props) => {
   };
 
   const changeValue = (action) => {
-    setState((prevState, prevProps) => {
+    setState((prevState) => {
       let currentCounterValue = prevState.counterValue;
 
       if (action === "add") {
         currentCounterValue += +prevState.steperValue;
       } else if (action === "reinit") {
-        currentCounterValue = prevProps.initValue;
+        currentCounterValue = props.initValue;
       } else {
         currentCounterValue = 0;
       }
@@ -35,9 +36,9 @@ const Counter = (props) => {
     });
   };
 
-  const onSteperChangeHandler = (event) => {
+  const onSteperChangeHandler = () => {
     setState((prevState) => {
-      return { ...prevState, steperValue: event.target.value };
+      return { ...prevState, steperValue: inputRef.current.value };
     });
   };
 
@@ -58,10 +59,7 @@ const Counter = (props) => {
       Counter:
       <Display displayValue={state.counterValue} />
       <ButtonsPanel buttonMethod={changeValue} addValue={state.steperValue} />
-      <Step
-        steperMethod={onSteperChangeHandler}
-        steperValue={state.steperValue}
-      />
+      <Step inputRef={inputRef} steperMethod={onSteperChangeHandler} />
       {clockElement}
     </div>
   );
