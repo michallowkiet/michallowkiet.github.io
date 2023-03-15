@@ -1,0 +1,64 @@
+import htmlImg from '../assets/skills/html.png';
+import cssImg from '../assets/skills/css.png';
+import jsImg from '../assets/skills/javascript.png';
+import tsImg from '../assets/skills/typescript.svg';
+import reactImg from '../assets/skills/react.png';
+import vueImg from '../assets/skills/vue-9.svg';
+import expressImg from '../assets/skills/express.svg';
+import mongoImg from '../assets/skills/mongo.png';
+import tailwindImg from '../assets/skills/tailwind.png';
+import gitImg from '../assets/skills/git.svg';
+import githubImg from '../assets/skills/github1.png';
+import mysqlImg from '../assets/skills/mysql.png';
+import phpImg from '../assets/skills/php-1.svg';
+import symfonyImg from '../assets/skills/symfony.svg';
+
+import Skill from '../components/Skill';
+
+const Skills = () => {
+  return (
+    <section id='skills' className='mt-[200px] lg:mt-0 w-full lg:h-screen'>
+      <div className='mx-auto flex h-full max-w-[1240px] flex-col justify-center px-8 gap-16 md:px-16'>
+        <div>
+          <h2 className='mb-2 font-normal uppercase tracking-widest text-neon-blue'>
+            Umiejętności
+          </h2>
+          <h3 className='mb-4 text-2xl font-normal'>
+            Technologie z jakimi pracowałem
+          </h3>
+        </div>
+
+        <div className='grid sm:grid-cols-3 gap-8 md:grid-cols-3 lg:grid-cols-5 justify-items-center'>
+          <Skill img={htmlImg} alt='HTML logo' text='html' />
+
+          <Skill img={cssImg} alt='CSS logo' text='css' />
+
+          <Skill img={tailwindImg} alt='Tailwind logo' text='tailwind' />
+
+          <Skill img={jsImg} alt='JavaScript logo' text='javascript' />
+
+          <Skill img={tsImg} alt='TypeScript logo' text='typescript' />
+
+          <Skill img={reactImg} alt='React logo' text='react' />
+
+          <Skill img={vueImg} alt='Vue logo' text='vue' />
+
+          <Skill img={expressImg} alt='Express js logo' text='Express.js' />
+
+          <Skill img={mongoImg} alt='MongoDB logo' text='mongo' />
+
+          <Skill img={gitImg} alt='Git logo' text='git' />
+
+          <Skill img={githubImg} alt='GitHub logo' text='github' />
+
+          <Skill img={mysqlImg} alt='MySQL logo' text='mysql' />
+
+          <Skill img={phpImg} alt='PHP logo' text='php' />
+          <Skill img={symfonyImg} alt='Symfony logo' text='symfony' />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Skills;
