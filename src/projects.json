@@ -1,58 +1,56 @@
-{
-  "projects": [
-    {
-      "title": "Omnifood",
-      "stack": ["HTML", "CSS", "JS"],
-      "img": "",
-      "liveUrl": "https://michallowkiet.github.io/omnifood/",
-      "gitUrl": "https://github.com/michallowkiet/omnifood"
-    },
-    {
-      "title": "EVOGYM",
-      "stack": ["HTML", "TAILWIND", "REACT", "TYPESCRIPT"],
-      "img": "",
-      "liveUrl": "https://evogym-9ax9.onrender.com/",
-      "gitUrl": "https://github.com/michallowkiet/gym-website"
-    },
-    {
-      "title": "Michał Łowkiet",
-      "stack": ["HTML", "TAILWIND", "REACT", "TYPESCRIPT"],
-      "img": "",
-      "liveUrl": "https://michallowkiet.onrender.com/",
-      "gitUrl": "https://github.com/michallowkiet/michallowkiet.github.io"
-    },
-    {
-      "title": "SPA",
-      "stack": ["HTML", "SASS", "JS"],
-      "img": "",
-      "liveUrl": "https://michallowkiet.github.io/project-spa/",
-      "gitUrl": "https://github.com/michallowkiet/project-spa"
-    },
-    {
-      "title": "Interactive Agency",
-      "stack": ["HTML", "BOOTSTRAP 5"],
-      "img": "",
-      "liveUrl": "https://michallowkiet.github.io/interactive-agency/",
-      "gitUrl": "https://github.com/michallowkiet/interactive-agency"
-    },
-    {
-      "title": "New Age",
-      "stack": ["HTML", "BOOTSTRAP 5"],
-      "img": "",
-      "liveUrl": "https://michallowkiet.github.io/new-age-landing-page/",
-      "gitUrl": "https://github.com/michallowkiet/new-age-landing-page"
-    },
-    {
-      "title": "E commerce API",
-      "stack": ["Express", "MongoDB", "TYPESCRIPT"],
-      "img": "",
-      "gitUrl": "https://github.com/michallowkiet/e-commerce-api"
-    },
-    {
-      "title": "Job Tracking API",
-      "stack": ["Express", "MongoDB", "TYPESCRIPT"],
-      "img": "",
-      "gitUrl": "https://github.com/michallowkiet/jobs-api"
-    }
-  ]
-}
+[
+  {
+    "title": "Omnifood",
+    "stack": ["HTML", "CSS", "JS"],
+    "img": "src/assets/projects/omnifood.webp",
+    "liveUrl": "https://michallowkiet.github.io/omnifood/",
+    "gitUrl": "https://github.com/michallowkiet/omnifood"
+  },
+  {
+    "title": "EVOGYM",
+    "stack": ["HTML", "TAILWIND", "REACT", "TYPESCRIPT"],
+    "img": "src/assets/projects/evogym.webp",
+    "liveUrl": "https://evogym-9ax9.onrender.com/",
+    "gitUrl": "https://github.com/michallowkiet/gym-website"
+  },
+  {
+    "title": "Michał Łowkiet",
+    "stack": ["HTML", "TAILWIND", "REACT", "TYPESCRIPT"],
+    "img": "src/assets/projects/portfolio.webp",
+    "liveUrl": "https://michallowkiet.onrender.com/",
+    "gitUrl": "https://github.com/michallowkiet/michallowkiet.github.io"
+  },
+  {
+    "title": "SPA",
+    "stack": ["HTML", "SASS", "JS"],
+    "img": "src/assets/projects/spa.webp",
+    "liveUrl": "https://michallowkiet.github.io/project-spa/",
+    "gitUrl": "https://github.com/michallowkiet/project-spa"
+  },
+  {
+    "title": "Interactive Agency",
+    "stack": ["HTML", "BOOTSTRAP 5"],
+    "img": "src/assets/projects/agency.webp",
+    "liveUrl": "https://michallowkiet.github.io/interactive-agency/",
+    "gitUrl": "https://github.com/michallowkiet/interactive-agency"
+  },
+  {
+    "title": "New Age",
+    "stack": ["HTML", "BOOTSTRAP 5"],
+    "img": "src/assets/projects/new-age.webp",
+    "liveUrl": "https://michallowkiet.github.io/new-age-landing-page/",
+    "gitUrl": "https://github.com/michallowkiet/new-age-landing-page"
+  },
+  {
+    "title": "E commerce API",
+    "stack": ["Express", "MongoDB", "TYPESCRIPT"],
+    "img": "src/assets/projects/e-commerce-api.webp",
+    "gitUrl": "https://github.com/michallowkiet/e-commerce-api"
+  },
+  {
+    "title": "Job Tracking API",
+    "stack": ["Express", "MongoDB", "TYPESCRIPT"],
+    "img": "src/assets/projects/jobs-api.webp",
+    "gitUrl": "https://github.com/michallowkiet/jobs-api"
+  }
+]

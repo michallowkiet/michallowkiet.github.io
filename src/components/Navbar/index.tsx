@@ -6,7 +6,7 @@ import logo from '../../assets/logo.svg';
 import MobileMenu from './MobileMenu';
 import NavLink from './NavLink';
 
-const pages = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+const pages = ['Główna', 'O mnie', 'Umiejętności', 'Projekty', 'Kontakt'];
 
 const Navbar = ({ selectedPage, setSelectedPage }: IDefaultProps) => {
   const [isToggleMenu, setIsToggleMenu] = useState<boolean>(false);

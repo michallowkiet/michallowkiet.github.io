@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import profilePicture from '../assets/ja.png';
+import profilePicture from '../assets/ja.webp';
 import { useIsInView } from '../hooks/useIsInView';
 import IDefaultProps from '../types/IDefaultProps';
 import Pages from '../types/Pages';
@@ -16,7 +16,7 @@ const About = ({ setSelectedPage }: IDefaultProps) => {
 
   return (
     <section
-      id='about'
+      id='o mnie'
       className='py-[200px] lg:mt-0 w-full flex items-center text-center sm:text-left'
     >
       <div

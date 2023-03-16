@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import Navbar from './components/Navbar';
 import About from './views/About';
 import Contact from './views/Contact';
+import Footer from './views/Footer';
 import Hero from './views/Hero';
 import Projects from './views/Projects';
 import Skills from './views/Skills';
@@ -17,6 +18,7 @@ function App() {
       <Skills setSelectedPage={setSelectedPage} />
       <Projects setSelectedPage={setSelectedPage} />
       <Contact setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 }

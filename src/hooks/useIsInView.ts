@@ -6,7 +6,7 @@ export const useIsInView = (ref: RefObject<Element>): boolean => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setIsInView(entry.isIntersecting),
-      { threshold: 0.7 },
+      { threshold: 0.5 },
     );
 
     observer.observe(ref.current as Element);

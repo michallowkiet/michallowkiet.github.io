@@ -17,7 +17,7 @@ const Hero = ({ setSelectedPage }: IDefaultProps) => {
   }, [isInView]);
 
   return (
-    <div ref={ref} id='home' className='h-screen w-full  text-center'>
+    <div ref={ref} id='główna' className='h-screen w-full  text-center'>
       <div className='mx-auto flex h-screen w-full max-w-[1240px] items-center justify-center p-2'>
         <div>
           <h1 className='py-2 text-gray-700'>

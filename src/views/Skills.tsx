@@ -1,15 +1,15 @@
 import htmlImg from '../assets/skills/html.png';
 import cssImg from '../assets/skills/css.png';
-import jsImg from '../assets/skills/javascript.png';
+import jsImg from '../assets/skills/javascript.webp';
 import tsImg from '../assets/skills/typescript.svg';
 import reactImg from '../assets/skills/react.png';
 import vueImg from '../assets/skills/vue-9.svg';
 import expressImg from '../assets/skills/express.svg';
-import mongoImg from '../assets/skills/mongo.png';
+import mongoImg from '../assets/skills/mongo.webp';
 import tailwindImg from '../assets/skills/tailwind.png';
 import gitImg from '../assets/skills/git.svg';
 import githubImg from '../assets/skills/github1.png';
-import mysqlImg from '../assets/skills/mysql.png';
+import mysqlImg from '../assets/skills/mysql.webp';
 import phpImg from '../assets/skills/php-1.svg';
 import symfonyImg from '../assets/skills/symfony.svg';
 
@@ -30,7 +30,10 @@ const Skills = ({ setSelectedPage }: IDefaultProps) => {
   }, [isInView]);
 
   return (
-    <section id='skills' className='py-[200px] lg:mt-0 w-full text-center'>
+    <section
+      id='umiejętności'
+      className='py-[200px] lg:mt-0 w-full text-center'
+    >
       <div
         ref={ref}
         className='mx-auto flex h-full max-w-[1240px] flex-col justify-center px-8 gap-16 md:px-16'
