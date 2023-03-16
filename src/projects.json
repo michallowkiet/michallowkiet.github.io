@@ -2,55 +2,55 @@
   {
     "title": "Omnifood",
     "stack": ["HTML", "CSS", "JS"],
-    "img": "../assets/projects/omnifood.webp",
+    "img": "/projects/omnifood.webp",
     "liveUrl": "https://michallowkiet.github.io/omnifood/",
     "gitUrl": "https://github.com/michallowkiet/omnifood"
   },
   {
     "title": "EVOGYM",
     "stack": ["HTML", "TAILWIND", "REACT", "TYPESCRIPT"],
-    "img": "../assets/projects/evogym.webp",
+    "img": "/projects/evogym.webp",
     "liveUrl": "https://evogym-9ax9.onrender.com/",
     "gitUrl": "https://github.com/michallowkiet/gym-website"
   },
   {
     "title": "Michał Łowkiet",
     "stack": ["HTML", "TAILWIND", "REACT", "TYPESCRIPT"],
-    "img": "../assets/projects/portfolio.webp",
+    "img": "/projects/portfolio.webp",
     "liveUrl": "https://michallowkiet.onrender.com/",
     "gitUrl": "https://github.com/michallowkiet/michallowkiet.github.io"
   },
   {
     "title": "SPA",
     "stack": ["HTML", "SASS", "JS"],
-    "img": "../assets/projects/spa.webp",
+    "img": "/projects/spa.webp",
     "liveUrl": "https://michallowkiet.github.io/project-spa/",
     "gitUrl": "https://github.com/michallowkiet/project-spa"
   },
   {
     "title": "Interactive Agency",
     "stack": ["HTML", "BOOTSTRAP 5"],
-    "img": "../assets/projects/agency.webp",
+    "img": "/projects/agency.webp",
     "liveUrl": "https://michallowkiet.github.io/interactive-agency/",
     "gitUrl": "https://github.com/michallowkiet/interactive-agency"
   },
   {
     "title": "New Age",
     "stack": ["HTML", "BOOTSTRAP 5"],
-    "img": "../assets/projects/new-age.webp",
+    "img": "/projects/new-age.webp",
     "liveUrl": "https://michallowkiet.github.io/new-age-landing-page/",
     "gitUrl": "https://github.com/michallowkiet/new-age-landing-page"
   },
   {
     "title": "E commerce API",
     "stack": ["Express", "MongoDB", "TYPESCRIPT"],
-    "img": "../assets/projects/e-commerce-api.webp",
+    "img": "/projects/e-commerce-api.webp",
     "gitUrl": "https://github.com/michallowkiet/e-commerce-api"
   },
   {
     "title": "Job Tracking API",
     "stack": ["Express", "MongoDB", "TYPESCRIPT"],
-    "img": "../assets/projects/jobs-api.webp",
+    "img": "/projects/jobs-api.webp",
     "gitUrl": "https://github.com/michallowkiet/jobs-api"
   }
 ]
