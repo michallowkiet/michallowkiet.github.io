@@ -1,4 +1,4 @@
-import IProject from '@/types/IProject';
+import IProject from '../../types/IProject';
 
 const Project = ({ title, stack, img, liveUrl = '', gitUrl }: IProject) => {
   return (

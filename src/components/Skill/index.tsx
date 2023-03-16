@@ -1,4 +1,4 @@
-import ISkill from '@/types/ISkill';
+import ISkill from '../../types/ISkill';
 
 const Skill = ({ img, alt, text }: ISkill) => {
   return (

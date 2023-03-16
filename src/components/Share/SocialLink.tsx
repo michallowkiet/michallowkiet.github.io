@@ -1,4 +1,4 @@
-import { ISocialLink } from '@/types/ILink';
+import { ISocialLink } from '../../types/ILink';
 
 const SocialLink = ({ Icon, href, size = 26 }: ISocialLink) => {
   return (

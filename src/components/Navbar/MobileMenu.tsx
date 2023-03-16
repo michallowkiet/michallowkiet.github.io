@@ -1,4 +1,4 @@
-import IMobileMenu from '@/types/IMobileMenu';
+import IMobileMenu from '../../types/IMobileMenu';
 import { AiOutlineClose } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import SocialLink from '../Share/SocialLink';

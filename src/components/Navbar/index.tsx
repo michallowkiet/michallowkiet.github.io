@@ -1,4 +1,4 @@
-import IDefaultProps from '@/types/IDefaultProps';
+import IDefaultProps from '../../types/IDefaultProps';
 import { useEffect, useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 

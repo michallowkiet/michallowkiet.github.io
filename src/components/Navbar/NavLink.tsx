@@ -1,4 +1,4 @@
-import ILink from '@/types/ILink';
+import ILink from '../../types/ILink';
 
 const NavLink = ({ page, selectedPage, setSelectedPage }: ILink) => {
   const pageLowerCase = page.toLowerCase();
