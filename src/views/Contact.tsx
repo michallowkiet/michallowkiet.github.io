@@ -18,14 +18,15 @@ const Contact = ({ setSelectedPage }: IDefaultProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useIsInView(ref);
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     const isValid = await trigger();
+    const form = e.target as HTMLFormElement;
 
     if (!isValid) {
       e.preventDefault();
     }
 
-    e.target.reset();
+    form.reset();
   };
 
   useEffect(() => {
