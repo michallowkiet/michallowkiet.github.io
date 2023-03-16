@@ -14,16 +14,32 @@ import phpImg from '../assets/skills/php-1.svg';
 import symfonyImg from '../assets/skills/symfony.svg';
 
 import Skill from '../components/Skill';
+import IDefaultProps from '../types/IDefaultProps';
+import { useEffect, useRef } from 'react';
+import { useIsInView } from '../hooks/useIsInView';
+import Pages from '../types/Pages';
 
-const Skills = () => {
+const Skills = ({ setSelectedPage }: IDefaultProps) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useIsInView(ref);
+
+  useEffect(() => {
+    if (isInView) {
+      setSelectedPage(Pages.SKILLS);
+    }
+  }, [isInView]);
+
   return (
-    <section id='skills' className='mt-[200px] lg:mt-0 w-full lg:h-screen'>
-      <div className='mx-auto flex h-full max-w-[1240px] flex-col justify-center px-8 gap-16 md:px-16'>
+    <section id='skills' className='py-[200px] lg:mt-0 w-full text-center'>
+      <div
+        ref={ref}
+        className='mx-auto flex h-full max-w-[1240px] flex-col justify-center px-8 gap-16 md:px-16'
+      >
         <div>
           <h2 className='mb-2 font-normal uppercase tracking-widest text-neon-blue'>
             Umiejętności
           </h2>
-          <h3 className='mb-4 text-2xl font-normal'>
+          <h3 className='pb-8 text-2xl font-normal'>
             Technologie z jakimi pracowałem
           </h3>
         </div>

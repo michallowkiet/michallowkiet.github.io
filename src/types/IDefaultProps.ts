@@ -1,5 +1,5 @@
 interface IDefaultProps {
-  selectedPage: string;
+  selectedPage?: string;
   setSelectedPage: (selectedPage: string) => void;
 }
 

@@ -1,6 +1,7 @@
 import IDefaultProps from '../../types/IDefaultProps';
 import { useEffect, useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
+import logo from '../../assets/logo.svg';
 
 import MobileMenu from './MobileMenu';
 import NavLink from './NavLink';
@@ -28,8 +29,8 @@ const Navbar = ({ selectedPage, setSelectedPage }: IDefaultProps) => {
       }`}
     >
       <div className='flex h-full mx-auto w-full items-center justify-between px-8 2xl:px-16 max-w-[1240px]'>
-        <div>
-          <h2 className='font-shadow'>ML</h2>
+        <div className='w-[50px]'>
+          <img src={logo} alt='Logo' />
         </div>
 
         <ul className='hidden md:flex'>

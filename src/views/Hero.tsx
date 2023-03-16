@@ -1,9 +1,23 @@
 import SocialLink from '../components/Share/SocialLink';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
-const Hero = () => {
+import IDefaultProps from '../types/IDefaultProps';
+import Pages from '../types/Pages';
+import { useIsInView } from '../hooks/useIsInView';
+import { useEffect, useRef } from 'react';
+
+const Hero = ({ setSelectedPage }: IDefaultProps) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useIsInView(ref);
+
+  useEffect(() => {
+    if (isInView) {
+      setSelectedPage(Pages.HOME);
+    }
+  }, [isInView]);
+
   return (
-    <div id='home' className='h-screen w-full  text-center'>
+    <div ref={ref} id='home' className='h-screen w-full  text-center'>
       <div className='mx-auto flex h-screen w-full max-w-[1240px] items-center justify-center p-2'>
         <div>
           <h1 className='py-2 text-gray-700'>

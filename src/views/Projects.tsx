@@ -1,14 +1,30 @@
 import Project from '../components/Project';
-import pImage1 from '../assets/projects/property.jpg';
+import pImage1 from '../assets/projects/agency.png';
+import IDefaultProps from '../types/IDefaultProps';
+import Pages from '../types/Pages';
+import { useIsInView } from '../hooks/useIsInView';
+import { useEffect, useRef } from 'react';
 
-const Projects = () => {
+const Projects = ({ setSelectedPage }: IDefaultProps) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useIsInView(ref);
+
+  useEffect(() => {
+    if (isInView) {
+      setSelectedPage(Pages.PROJECTS);
+    }
+  }, [isInView]);
+
   return (
-    <section id='projects' className='mt-[200px] lg:mt-0 w-full lg:h-screen'>
-      <div className='mx-auto flex h-full max-w-[1240px] flex-col justify-center px-8 md:px-16'>
+    <section id='projects' className='py-[200px] lg:mt-0 w-full text-center'>
+      <div
+        ref={ref}
+        className='mx-auto flex h-full max-w-[1240px] flex-col justify-center px-8 md:px-16'
+      >
         <h2 className='mb-2 font-normal uppercase tracking-widest text-neon-blue'>
           Projekty
         </h2>
-        <h3 className='mb-4 text-2xl font-normal'>Co zbudowałem?</h3>
+        <h3 className='pb-8 text-2xl font-normal'>Co zbudowałem?</h3>
 
         <div className='grid gap-8 lg:grid-cols-2'>
           <Project

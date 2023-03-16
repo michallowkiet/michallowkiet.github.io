@@ -2,22 +2,39 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import meEmoji from '../assets/ja-emoji-bg.png';
 import SocialLink from '../components/Share/SocialLink';
+import IDefaultProps from '../types/IDefaultProps';
+import Pages from '../types/Pages';
+import { useEffect, useRef } from 'react';
+import { useIsInView } from '../hooks/useIsInView';
 
-const Contact = () => {
+const Contact = ({ setSelectedPage }: IDefaultProps) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useIsInView(ref);
+
+  useEffect(() => {
+    if (isInView) {
+      setSelectedPage(Pages.CONTACT);
+    }
+  }, [isInView]);
+
   return (
-    <div id='contact' className='mt-[200px] lg:mt-0 w-full lg:h-screen'>
-      <div className='mx-auto flex h-full max-w-[1240px] flex-col justify-center px-8 md:px-16'>
+    <div
+      ref={ref}
+      id='contact'
+      className='pt-[200px] lg:mt-0 w-full text-center'
+    >
+      <div className='mx-auto flex h-full max-w-[1240px] flex-col justify-center px-8 md:px-16 pb-16'>
         <h2 className='mb-2 font-normal uppercase tracking-widest text-neon-blue'>
           Kontakt
         </h2>
-        <h3 className='mb-4 text-2xl font-normal'>Napisz do mnie</h3>
+        <h3 className='pb-8 text-2xl font-normal'>Napisz do mnie</h3>
 
         <div className='grid gap-8 lg:grid-cols-5'>
-          <div className='col-span-3 h-full w-full rounded-xl p-2 shadow-xl shadow-gray-400 lg:col-span-2'>
+          <div className='col-span-3 h-full w-full rounded-xl px-4 py-8 shadow-xl shadow-gray-400 lg:col-span-2'>
             <div className='h-full lg:p-4 flex flex-col justify-between'>
               <div>
                 <img
-                  className='rounded-xl duration-300 ease-in hover:scale-105'
+                  className='rounded-xl duration-300 ease-in hover:scale-105 mx-auto'
                   src={meEmoji}
                   alt='Me as emoji'
                 />
@@ -34,7 +51,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <div className='mx-auto flex w-3/5 items-center justify-center gap-8  mt-auto'>
+                <div className='mx-auto flex w-3/5 items-center justify-center gap-8  mt-4'>
                   <SocialLink
                     Icon={FaLinkedinIn}
                     href='https://www.linkedin.com/in/michallowkiet/'
@@ -49,7 +66,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className='col-span-3 h-full w-full rounded-xl p-2 shadow-xl shadow-gray-400 lg:col-span-3'>
+          <div className='col-span-3 h-full w-full rounded-xl px-4 py-8 shadow-xl shadow-gray-400 lg:col-span-3'>
             <div className='p-2'>
               <form className='flex flex-col gap-8'>
                 <div>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Navbar from './components/Navbar';
 import About from './views/About';
 import Contact from './views/Contact';
@@ -12,11 +12,11 @@ function App() {
   return (
     <div className='App'>
       <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Hero setSelectedPage={setSelectedPage} />
+      <About setSelectedPage={setSelectedPage} />
+      <Skills setSelectedPage={setSelectedPage} />
+      <Projects setSelectedPage={setSelectedPage} />
+      <Contact setSelectedPage={setSelectedPage} />
     </div>
   );
 }

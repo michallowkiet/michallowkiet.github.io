@@ -1,12 +1,28 @@
+import { useEffect, useRef } from 'react';
 import profilePicture from '../assets/ja.png';
+import { useIsInView } from '../hooks/useIsInView';
+import IDefaultProps from '../types/IDefaultProps';
+import Pages from '../types/Pages';
 
-const About = () => {
+const About = ({ setSelectedPage }: IDefaultProps) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useIsInView(ref);
+
+  useEffect(() => {
+    if (isInView) {
+      setSelectedPage(Pages.ABOUT);
+    }
+  }, [isInView]);
+
   return (
     <section
       id='about'
-      className='mt-[200px] lg:mt-0 w-full lg:h-screen flex items-center'
+      className='py-[200px] lg:mt-0 w-full flex items-center text-center sm:text-left'
     >
-      <div className='mx-auto max-w-[1240px] grid-cols-3 gap-8 px-8 md:grid md:px-16'>
+      <div
+        ref={ref}
+        className='mx-auto max-w-[1240px] grid-cols-3 gap-8 px-8 md:grid md:px-16'
+      >
         <div className='col-span-2'>
           <h2 className='mb-2 font-normal uppercase tracking-widest text-neon-blue'>
             O mnie
