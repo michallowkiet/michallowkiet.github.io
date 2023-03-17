@@ -36,9 +36,12 @@ const About = ({ setSelectedPage }: IDefaultProps) => {
             stanie tworzyć interfejs oraz logikę swoich aplikacji.
           </p>
 
-          <button className='self-center py-3 px-4 text-gray-100 duration-300 ease-in hover:scale-105 bg-gradient-button rounded-xl tracking-wider'>
+          <a
+            href='#projekty'
+            className='self-center py-3 px-4 text-gray-100 duration-300 ease-in hover:scale-105 bg-gradient-button rounded-xl tracking-wider mt-8 block w-[33%]'
+          >
             Sprawdź moje projekty.
-          </button>
+          </a>
           <p className='text-lg '></p>
         </div>
         <div className='m-auto mt-12 flex h-auto w-full items-center justify-center rounded-xl p-2 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-105 md:mt-auto'>
