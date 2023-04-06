@@ -62,10 +62,7 @@ const Contact = ({ setSelectedPage }: IDefaultProps) => {
                 <p className='text-gray-400'>
                   Początkujący Full Stack Developer
                 </p>
-                <p className='py-4'>
-                  Aktualnie poszukuje pracy. Z kontaktuj się ze mną i
-                  porozmawiajmy.
-                </p>
+                <p className='py-4'>Z kontaktuj się ze mną i porozmawiajmy.</p>
               </div>
 
               <div>
@@ -155,17 +152,7 @@ const Contact = ({ setSelectedPage }: IDefaultProps) => {
                       </p>
                     )}
                   </div>
-                  <div className='flex flex-col'>
-                    <label className='py-2 text-sm uppercase' htmlFor='subject'>
-                      Tytuł
-                    </label>
-                    <input
-                      className='rounded-lg border-2 border-gray-300 p-2'
-                      type='text'
-                      id='subject'
-                      name='subject'
-                    />
-                  </div>
+
                   <div className='flex flex-col'>
                     <label className='py-2 text-sm uppercase' htmlFor='message'>
                       Wiadomość
