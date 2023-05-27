@@ -33,7 +33,7 @@ const About = ({ setSelectedPage }: IDefaultProps) => {
             aplikacji webowych z wykorzystaniem MERN. Wcześniej pracowałem jako
             junior PHP developer. Niestety nie dawało mi takiej satysfakcji jak
             tworzenie front-endu aplikacji. Teraz wykorzystując JS jestem w
-            stanie tworzyć interfejs oraz logikę swoich aplikacji.
+            stanie tworzyć interfejs oraz logikę swoich aplikacji. Test
           </p>
 
           <a
