@@ -9,26 +9,26 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "framer-motion": "^10.3.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-hook-form": "^7.43.5",
-    "react-icons": "^4.8.0"
+    "framer-motion": "^12.0.6",
+    "react": "^18.3.*",
+    "react-dom": "^18.3.*",
+    "react-hook-form": "^7.54.2",
+    "react-icons": "^5.4.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
-    "@vitejs/plugin-react": "^3.1.0",
-    "autoprefixer": "^10.4.14",
-    "eslint": "^8.36.0",
-    "eslint-config-prettier": "^8.7.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-tailwindcss": "^3.10.1",
-    "postcss": "^8.4.21",
-    "prettier": "^2.8.4",
-    "tailwindcss": "^3.2.7",
-    "typescript": "^4.9.3",
-    "vite": "^4.1.0"
+    "@types/react": "^18.*",
+    "@types/react-dom": "^18.*",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-tailwindcss": "^3.18.0",
+    "postcss": "^8.5.1",
+    "prettier": "^3.4.2",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11"
   }
 }

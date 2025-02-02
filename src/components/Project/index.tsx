@@ -6,13 +6,13 @@ const Project = ({ title, stack, img, liveUrl = '', gitUrl }: IProject) => {
       <img
         src={img}
         alt='Project preview'
-        className='rounded-xl duration-300 ease-in group-hover:opacity-10 h-full w-full object-cover object-top'
+        className='rounded-xl duration-300 ease-in group-hover:opacity-10 h-full w-full object-cover object-center hover:object-top'
       />
 
-      <div className='absolute hidden flex-col items-center justify-center gap-8 group-hover:flex'>
+      <div className='absolute hidden flex-col items-center justify-center gap-8 group-hover:flex p-2'>
         <h3 className='text-white'>{title}</h3>
 
-        <div className='flex gap-2'>
+        <div className='flex gap-2 flex-wrap justify-center items-center'>
           {stack.map((item) => {
             return (
               <p
