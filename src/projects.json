@@ -40,5 +40,23 @@
     "img": "/projects/new-age.webp",
     "liveUrl": "https://michallowkiet.github.io/new-age-landing-page/",
     "gitUrl": "https://github.com/michallowkiet/new-age-landing-page"
+  },
+  {
+    "title": "Chat App",
+    "stack": [
+      "REACT",
+      "TYPESCRIPT",
+      "TAILWIND",
+      "NODEJS",
+      "EXPRESS",
+      "MONGODB",
+      "ZUSTAND",
+      "JWT",
+      "COOKIE",
+      "SOCKET.IO"
+    ],
+    "img": "/projects/chat-app.png",
+    "liveUrl": "https://chat-app-kep0.onrender.com/",
+    "gitUrl": "https://github.com/michallowkiet/chat-app"
   }
 ]
