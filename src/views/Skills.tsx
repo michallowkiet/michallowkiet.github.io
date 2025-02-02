@@ -1,22 +1,21 @@
-import htmlImg from '../assets/skills/html.png';
 import cssImg from '../assets/skills/css.png';
-import jsImg from '../assets/skills/javascript.webp';
-import tsImg from '../assets/skills/typescript.svg';
-import reactImg from '../assets/skills/react.png';
-import vueImg from '../assets/skills/vue-9.svg';
 import expressImg from '../assets/skills/express.svg';
-import mongoImg from '../assets/skills/mongo.webp';
-import tailwindImg from '../assets/skills/tailwind.png';
 import gitImg from '../assets/skills/git.svg';
 import githubImg from '../assets/skills/github1.png';
+import htmlImg from '../assets/skills/html.png';
+import jsImg from '../assets/skills/javascript.webp';
+import mongoImg from '../assets/skills/mongo.webp';
 import mysqlImg from '../assets/skills/mysql.webp';
 import phpImg from '../assets/skills/php-1.svg';
+import reactImg from '../assets/skills/react.png';
 import symfonyImg from '../assets/skills/symfony.svg';
+import tailwindImg from '../assets/skills/tailwind.png';
+import tsImg from '../assets/skills/typescript.svg';
 
-import Skill from '../components/Skill';
-import IDefaultProps from '../types/IDefaultProps';
 import { useEffect, useRef } from 'react';
+import Skill from '../components/Skill';
 import { useIsInView } from '../hooks/useIsInView';
+import IDefaultProps from '../types/IDefaultProps';
 import Pages from '../types/Pages';
 
 const Skills = ({ setSelectedPage }: IDefaultProps) => {
@@ -60,8 +59,6 @@ const Skills = ({ setSelectedPage }: IDefaultProps) => {
 
           <Skill img={reactImg} alt='React logo' text='react' />
 
-          <Skill img={vueImg} alt='Vue logo' text='vue' />
-
           <Skill img={expressImg} alt='Express js logo' text='Express.js' />
 
           <Skill img={mongoImg} alt='MongoDB logo' text='mongo' />
@@ -73,6 +70,7 @@ const Skills = ({ setSelectedPage }: IDefaultProps) => {
           <Skill img={mysqlImg} alt='MySQL logo' text='mysql' />
 
           <Skill img={phpImg} alt='PHP logo' text='php' />
+
           <Skill img={symfonyImg} alt='Symfony logo' text='symfony' />
         </div>
       </div>
