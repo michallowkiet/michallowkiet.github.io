@@ -40,17 +40,5 @@
     "img": "/projects/new-age.webp",
     "liveUrl": "https://michallowkiet.github.io/new-age-landing-page/",
     "gitUrl": "https://github.com/michallowkiet/new-age-landing-page"
-  },
-  {
-    "title": "E commerce API",
-    "stack": ["Express", "MongoDB", "TYPESCRIPT"],
-    "img": "/projects/e-commerce-api.webp",
-    "gitUrl": "https://github.com/michallowkiet/e-commerce-api"
-  },
-  {
-    "title": "Job Tracking API",
-    "stack": ["Express", "MongoDB", "TYPESCRIPT"],
-    "img": "/projects/jobs-api.webp",
-    "gitUrl": "https://github.com/michallowkiet/jobs-api"
   }
 ]
